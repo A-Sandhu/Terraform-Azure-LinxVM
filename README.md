@@ -1,6 +1,6 @@
 # Terraform-Azure-LinxVM
 
-# Build and deploy the infrastructure wuth using Terraform. 
+Build and deploy the infrastructure wuth using Terraform. 
 
 # With your Terraform template created, the first step is to initialize Terraform. This step ensures that Terraform has all the prerequisites to build your template in Azure.
 
