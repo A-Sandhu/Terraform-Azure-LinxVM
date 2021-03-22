@@ -1,7 +1,26 @@
 # Configure the Microsoft Azure Provider
+
+# Terraform
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "2.52.0"
+    }
+# To store remote tfstate files.
+
+  }
+   backend "azurerm" {
+    resource_group_name  = "rg-terraformstate"
+    storage_account_name = "terrastatestg22032021"
+    container_name       = "terraform"
+    key                  = "myVM.terraform.tfstate"
+  }
+}
+
+#Azure provider
 provider "azurerm" {
-    version = "2.52"
-    features {}
+  features {}
 }
 
 # Create a resource group if it doesn't exist
