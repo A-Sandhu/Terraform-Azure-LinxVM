@@ -1,6 +1,6 @@
 # Terraform-Azure-LinxVM
 
-1- terraform init
+1-terraform init
 
 2-terraform validate 
 
